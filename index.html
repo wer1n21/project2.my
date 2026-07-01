@@ -1,0 +1,186 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas class="scene" id="scene" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="На главную">
+        <span class="brand-mark">ИТ</span>
+        <span>Иван Трифонов</span>
+      </a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Переключить тему" aria-pressed="false">
+        Темная
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Разработчик интерфейсов</p>
+          <h1 id="hero-title" data-split-text>Привет, я Иван Трифонов. Создаю современные сайты и интерфейсы.</h1>
+          <p class="lead">
+            Здесь собраны будущие работы, идеи и проекты, которые постепенно
+            станут полноценным портфолио.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Смотреть работы</a>
+            <a class="button ghost" href="#contact">Связаться</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Краткая информация">
+          <div class="avatar">
+            <img src="./img/avatar.jpg" alt="Иван Трифонов" onerror="this.style.display='none'" />
+          </div>
+          <div>
+            <h2>Иван Трифонов</h2>
+            <p>Разработчик современных сайтов, интерфейсов и веб-приложений.</p>
+          </div>
+          <dl class="stats">
+            <div>
+              <dt>12+</dt>
+              <dd>проектов</dd>
+            </div>
+            <div>
+              <dt>3 года</dt>
+              <dd>практики</dd>
+            </div>
+            <div>
+              <dt>24ч</dt>
+              <dd>ответ</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Избранные работы</p>
+          <h2>Проекты</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-a">
+              <div class="mock-browser">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mock-dashboard">
+                <div class="dash-card hero-card">
+                  <span>01</span>
+                  <strong>Сайт</strong>
+                </div>
+                <div class="dash-card metric-card">
+                  <span>98%</span>
+                  <strong>UI</strong>
+                </div>
+                <div class="dash-card metric-card">
+                  <span>24</span>
+                  <strong>Проект</strong>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="tag">Современный сайт</span>
+              <h3>Сайт для личного бренда</h3>
+              <p>Минималистичная страница с сильным первым экраном, карточками работ и удобным блоком контактов.</p>
+              <div class="project-actions">
+                <a class="small-button dark" href="./temporary-site.html">Открыть сайт</a>
+                <a class="small-button light" href="#contact">Обсудить</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-b">
+              <div class="phone-preview">
+                <div class="phone-hero">
+                  <span>APP</span>
+                  <strong>375</strong>
+                </div>
+                <div class="phone-line">Навигация</div>
+                <div class="phone-line">Контакты</div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="tag">Адаптивный интерфейс</span>
+              <h3>Мобильная версия портфолио</h3>
+              <p>Вариант сайта для телефона: аккуратная сетка, читаемый текст и быстрый доступ к главным разделам.</p>
+              <div class="project-actions">
+                <a class="small-button dark" href="./temporary-site.html#mobile">Смотреть макет</a>
+                <a class="small-button light" href="#skills">Навыки</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-c">
+              <div class="shop-preview">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="tag">Будущий проект</span>
+              <h3>Сайт для проекта</h3>
+              <p>Заготовка под будущий сайт: сюда можно будет добавить реальную работу, скриншоты и ссылку на запуск.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Что я умею</p>
+          <h2>Навыки</h2>
+        </div>
+        <div class="skill-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Адаптивная верстка</span>
+          <span>Основы UX</span>
+          <span>Figma</span>
+          <span>Git</span>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Связь</p>
+          <h2>Готов обсудить проект?</h2>
+          <p>
+            Напиши мне в Telegram или на email, если хочешь обсудить проект, сайт или идею.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://t.me/ceo_nyse" target="_blank" rel="noreferrer">@ceo_nyse</a>
+          <a class="button ghost" href="mailto:ivantrif04@mail.ru">ivantrif04@mail.ru</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
